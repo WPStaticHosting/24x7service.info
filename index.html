@@ -22,7 +22,7 @@ html{font-size:93.75%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3
 <link rel="stylesheet" id="elementor-global-css" href="https://24x7service.info/wp-content/uploads/elementor/css/global.css?ver=1614145060" media="all">
 <link rel="stylesheet" id="elementor-post-8-css" href="https://24x7service.info/wp-content/uploads/elementor/css/post-8.css?ver=1614183149" media="all">
 <link rel="stylesheet" id="elementor-post-42-css" href="https://24x7service.info/wp-content/uploads/elementor/css/post-42.css?ver=1614184099" media="all">
-<link rel="stylesheet" id="elementor-post-13-css" href="https://24x7service.info/wp-content/uploads/elementor/css/post-13.css?ver=1614184241" media="all">
+<link rel="stylesheet" id="elementor-post-13-css" href="https://24x7service.info/wp-content/uploads/elementor/css/post-13.css?ver=1614184452" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.6.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://24x7service.info/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.1" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://24x7service.info/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.1" media="all">
@@ -38,7 +38,59 @@ html{font-size:93.75%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="home page-template page-template-elementor_header_footer page page-id-8 ast-single-post ast-inherit-site-logo-transparent astra-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.0.2 elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-8">
+<style>
+    /* Shine */
+    #mobile_button:after {
+        content: '';
+        top: 0;
+        transform: translateX(100%);
+        width: 100%;
+        height: 220px;
+        position: absolute;
+        z-index: 1;
+        animation: slide 1s infinite 3s;
 
+        /*
+    CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
+    */
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), color-stop(99%, rgba(128, 186, 232, 0)), color-stop(100%, rgba(125, 185, 232, 0)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+        /* IE10+ */
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#007db9e8', GradientType=1);
+        /* IE6-9 */
+    }
+
+    /* animation */
+
+    @keyframes slide {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+</style>
+<div id="mobile_button" style="height:80px;">
+    <a href="tel:18001028828" style="top:50%;color:#fff;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    display: inline-block;
+    font-family:'open sans',sans-serif;
+    letter-spacing:-1px;
+    font-weight:bold; font-size:1.5em">Toll Free 1800 102 8828</a>
+</div>
 <div class="hfeed site" id="page">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 			<div data-elementor-type="header" data-elementor-id="42" class="elementor elementor-42 elementor-location-header" data-elementor-settings="[]">
@@ -428,67 +480,11 @@ html{font-size:93.75%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3
 		</div>
 							</div>
 		</footer>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-e159b83 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="e159b83" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-effc904 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="effc904" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-15ddb4f" data-id="15ddb4f" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-a936fab elementor-widget elementor-widget-html" data-id="a936fab" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<style>
-    /* Shine */
-    #mobile_button:after {
-        content: '';
-        top: 0;
-        transform: translateX(100%);
-        width: 100%;
-        height: 220px;
-        position: absolute;
-        z-index: 1;
-        animation: slide 1s infinite 3s;
-
-        /*
-    CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
-    */
-        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-        /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), color-stop(99%, rgba(128, 186, 232, 0)), color-stop(100%, rgba(125, 185, 232, 0)));
-        /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-        /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-        /* Opera 11.10+ */
-        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-        /* IE10+ */
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
-        /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#007db9e8', GradientType=1);
-        /* IE6-9 */
-    }
-
-    /* animation */
-
-    @keyframes slide {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
-</style>
-<div id="mobile_button" style="height:80px;">
-    <a href="tel:18001028828" style="top:50%;color:#fff;
-    left:50%;
-    transform:translate(-50%,-50%);
-    position: absolute;
-    display: inline-block;
-    font-family:'open sans',sans-serif;
-    letter-spacing:-1px;
-    font-weight:bold; font-size:1.5em">Toll Free 1800 102 8828</a>
-</div>		</div>
-				</div>
-					</div>
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3c6a4bc" data-id="3c6a4bc" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
 		</div>
 							</div>
 		</section>
